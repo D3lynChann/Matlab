@@ -1,0 +1,11 @@
+f = imread('F:\pic\Ls\gz1.jpg');
+se = strel('square', 6);
+g1 = imopen(f, se);
+g2 = imclose(f, se);
+g3 = imopen(g2, se);
+g4 = imclose(g1, se);
+subplot(2, 2, 1), imshow(g1), title('开操作');
+subplot(2, 2, 2), imshow(g2), title('闭操作');
+subplot(2, 2, 3), imshow(g3), title('闭开操作');
+subplot(2, 2, 4), imshow(g4), title('开闭操作');
+imwrite(g3,'F:\pic\Ls\gzcjd.bmp');
