@@ -1,6 +1,6 @@
 clc; clear; close all;
  
-gray = imread('F:\pic\Ls\a_without_shadow.jpg');
+gray = imread('F:\pic\Ls\without_sd_mtl.bmp');
 figure;
 subplot(121),imshow(gray);
  

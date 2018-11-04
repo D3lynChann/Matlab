@@ -1,5 +1,5 @@
-f = imread('F:\pic\Ls\gz1.jpg');
-se = strel('square', 6);
+f = imread('F:\pic\Ls\L2sasd.bmp');
+se = strel('square', 3);
 g1 = imopen(f, se);
 g2 = imclose(f, se);
 g3 = imopen(g2, se);

@@ -1,4 +1,4 @@
-A=imread('F:\pic\Ls\a_without_shadow.bmp');
+A=imread('F:\pic\Ls\a_without_shadowk.bmp');
 imshow(A);
 
 %%

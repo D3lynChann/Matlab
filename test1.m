@@ -13,10 +13,10 @@ imshow(Ad);
 %}
 
 clear all; close all;
-I = imread('F:\pic\Ls\a_without_shadow.bmp');
+I = imread('F:\pic\Ls\without_sd_mtl.bmp');
 %I = imread('F:\pic\Ls\a_o.jpg');
 [m, n, p] = size(I);
-k = 6;
+k = 3;
 [C, label, J] = kmeans(I, k);
 I_seg = reshape(C(label, :), m, n, p);
 figure
@@ -24,4 +24,4 @@ subplot(1, 2, 1), imshow(I, []), title('‘≠Õº')
 subplot(1, 2, 2), imshow(uint8(I_seg), []), title('æ€¿‡Õº')
 figure
 plot(1:length(J), J), xlabel('#iterations')
-imwrite(I_seg/255,'F:\pic\Ls\ak.bmp')
+imwrite(I_seg/255,'F:\pic\Ls\akkk.bmp')
